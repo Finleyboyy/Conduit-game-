@@ -8,6 +8,26 @@
    macOS: `sudo mariadb`
    Windows: `mariadb -u root -p`
    Then run:
+   CREATE DATABASE IF NOT EXISTS conduit_game;
+CREATE USER IF NOT EXISTS 'gameuser'@'localhost' IDENTIFIED BY 'yourpassword';
+GRANT ALL PRIVILEGES ON conduit_game.* TO 'gameuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+
+
+3) Clone repo & install Python deps:
+
+git clone https://github.com/Finleyboyy/Conduit-game-.git
+cd Conduit-game-
+cp .env.example .env # Windows: copy .env.example .env
+
+
+4) Load airports (no server flags needed):
+python src/load_airports.py
+
+
+
+
 
 Conduit Game
 
