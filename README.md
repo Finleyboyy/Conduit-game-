@@ -1,3 +1,14 @@
+## Quick Setup (Windows & macOS)
+
+1) Install Python 3.11+ and MariaDB.
+   - macOS: `brew install mariadb && brew services start mariadb`
+   - Windows: install MariaDB and ensure the "MariaDB" service is running.
+
+2) Create DB + user (once, via MariaDB console):
+   macOS: `sudo mariadb`
+   Windows: `mariadb -u root -p`
+   Then run:
+
 Conduit Game
 
 A text-based horror survival game where the player must travel between airports to find and close mysterious conduits hidden across the world.
